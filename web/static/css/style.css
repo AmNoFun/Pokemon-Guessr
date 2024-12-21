@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+body {
+    font-family: 'Varela', sans-serif;
+    background-image: url("/static/icon/background.png");
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
+}
+#logo {
+    height: 120px;
+}
+
+.main-container {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 142px;
+    bottom: 10%;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(6px);
+    transition: 1s;
+    border-radius: 80px;
+    padding : 2% ;
+}
+.image_container{
+    position: absolute;
+    text-align: center;
+    left: 10px;
+    right: 48%;
+    top: 20px;
+    bottom: 30px;
+    margin: 5%;
+    margin-top: 3%;
+    padding-bottom: 10px;
+}
+#canvas{
+    width : 100%;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+    filter : grayscale(100%);
+}
+#Poke_image {
+    image-rendering: pixelated;
+    height: 115%;
+    display : none;
+}
+#interface_joueur {
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    left: 48%;
+    top: 60px;
+    bottom: 30px;
+    margin: 5%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+h2{
+    margin: 0%;
+    top: 3%;
+    position : absolute;
+    font-size: 3.5em;
+    color :#ffe031;
+    text-shadow: 0px 3px #396BBA;
+}
+#record{
+    left: 8%;
+}
+#score{
+    
+    right: 9%;
+}
+h1{
+    margin: 0%;
+    font-size: 4.5em;
+    color : white;
+    text-shadow: 2px 0px #396BBA, -2px 0px #396BBA, 0px 2px #396BBA, 0px -2px #396BBA;
+}
+
+input{
+    margin-top: 9%;
+    width: 100%;
+    height: 13%;
+    text-align: center;
+    font-size: 2.2em;
+}
+button{
+    border-radius: 10px;
+    border:none;
+    font-size: 2.2em;
+    width: 80%;
+    height: 10%;
+    margin-top: 6%;
+    background: #ffe031;
+    box-shadow: 0px 5px #cfb628;
+}
+button:active{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+#svg-container{
+    position : relative;
+    top : 10%;
+}
+#vie1{
+    padding-right: 10%;
+    fill:#81EDFF;
+}
+#vie2{
+    fill:#4DA32E;
+}
+#vie3{
+    padding-left: 10%;
+    fill:#FF8500;
+}

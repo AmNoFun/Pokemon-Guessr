@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>PokePixels</title>
+        <link rel="stylesheet" href="static/css/style.css" />
+        <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+        <script src="static/js/index.js"></script>
+    </head>
+    <body>
+        <img id="logo" src="/static/icon/Logo.png" />
+        <div class="main-container">
+            <h2 id="record">Record : 0</h2>
+            <h2 id="score">Score : 0</h2>
+            <div class="image_container">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div id="interface_joueur">
+                <h1>Guess this Pokemon's Name</h1>
+                <input placeholder="Pokemon's Name" id="submit">
+                <button id="valider" onclick="submitPoke()">Submit</button>
+                <div id="svg-container">
+                    <svg id="vie1" width="20%" height="20%" viewBox="0 0 32 29">
+                        <path d="M23.6,0C20.5,0,18,2.1,16,4.9C14,2.1,11.5,0,8.4,0C3.7,0,0,3.7,0,8.4c0,4.1,2.5,7.3,6.2,11.2c3,3.1,6.8,6.6,9.8,9.9c3-3.3,6.8-6.7,9.8-9.9c3.7-3.9,6.2-7.1,6.2-11.2C32,3.7,28.3,0,23.6,0z"/>
+                    </svg>
+                    <svg id="vie2" width="20%" height="20%" viewBox="0 0 32 29">
+                        <path d="M23.6,0C20.5,0,18,2.1,16,4.9C14,2.1,11.5,0,8.4,0C3.7,0,0,3.7,0,8.4c0,4.1,2.5,7.3,6.2,11.2c3,3.1,6.8,6.6,9.8,9.9c3-3.3,6.8-6.7,9.8-9.9c3.7-3.9,6.2-7.1,6.2-11.2C32,3.7,28.3,0,23.6,0z"/>
+                    </svg>
+                    <svg id="vie3" width="20%" height="20%" viewBox="0 0 32 29">
+                        <path d="M23.6,0C20.5,0,18,2.1,16,4.9C14,2.1,11.5,0,8.4,0C3.7,0,0,3.7,0,8.4c0,4.1,2.5,7.3,6.2,11.2c3,3.1,6.8,6.6,9.8,9.9c3-3.3,6.8-6.7,9.8-9.9c3.7-3.9,6.2-7.1,6.2-11.2C32,3.7,28.3,0,23.6,0z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <img id="Poke_image" src="https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/items/poke-ball.png" alt="Image du pokemon">
+    </body>
+</html>
